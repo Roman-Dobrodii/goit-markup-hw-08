@@ -1,0 +1,33 @@
+.work {
+  padding-bottom: 94px;
+}
+.work-title {
+  @extend %title-section;
+}
+.work-list {
+  display: flex;
+  justify-content: space-between;
+
+  & .work-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  & .work-item {
+    position: relative;
+  }
+}
+
+.work-text-white {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: $title-white-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: rgba(47, 48, 58, 0.8);
+}

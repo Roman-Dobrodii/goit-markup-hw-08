@@ -1,0 +1,126 @@
+footer {
+  background-color: $footer-bg-color;
+}
+.logo-footer {
+  @extend %logo;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 45px;
+}
+address {
+  display: flex;
+  flex-direction: column;
+}
+.adress-title {
+  margin-bottom: 9px;
+  color: $title-white-color;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.contact {
+  color: $footer-text-color;
+  margin-bottom: 9px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.contact:last-child {
+  margin-bottom: 28px;
+}
+
+.join-title {
+  display: block;
+  color: $title-white-color;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.join-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & .social-link:hover,
+  & .social-link:focus {
+    background-color: $accent;
+  }
+  & .item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.join .social-link {
+  background-color: $footer-bg-socicon;
+}
+.join .social-icon {
+  fill: $title-white-color;
+}
+.subscribe {
+  display: flex;
+  align-items: flex-end;
+  width: 570px;
+}
+.input-footer {
+  display: inline-block;
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding: 15px 16px;
+  background-color: $footer-bg-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: $footer-text-color;
+
+  &:focus,
+  &:active {
+    outline: transparent;
+    border: 1px solid $accent;
+  }
+}
+.subscribe-title {
+  display: block;
+  color: $title-white-color;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.button-footer {
+  @extend %button;
+  display: inline-flex;
+  padding: 10px 29px;
+  align-items: center;
+}
+
+.subscribe-icon {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+.copyright {
+  display: block;
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  padding-top: 18px;
+  padding-bottom: 21px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}

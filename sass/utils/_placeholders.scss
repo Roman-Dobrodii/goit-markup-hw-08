@@ -1,0 +1,41 @@
+%logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+// Кнопка героя + кнопка отправить в модалке+кнопка футера
+%button {
+  display: inline-block;
+  border: 1px solid transparent;
+  min-width: 200px;
+  background-color: $accent;
+  color: $title-white-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: box-shadow 250ms $time-function;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  &:active {
+    box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.3);
+  }
+}
+// Заголовки секций
+%title-section {
+  margin-bottom: 50px;
+  color: $primary-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
