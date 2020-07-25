@@ -5,14 +5,38 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-
-  & .icon-cross {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
-.menu-button.is-open .icon-cross {
+
+.icon-cross,
+.icon-menu {
+  display: inline-block;
+  margin: auto;
+  fill: currentColor;
+  transition: fill 250ms $time-function;
+}
+
+.menu-button:hover .icon-menu,
+.menu-button:focus .icon-cross {
+  fill: $accent;
+}
+
+.menu-button:hover,
+.menu-button:focus {
+  outline: transparent;
+  border: 1px solid $accent;
+}
+
+.menu-button .icon-menu {
+  display: none;
+}
+
+.menu-button.is-open .icon-menu {
   display: block;
 }
-.menu-button.is-open .icon-menu {
+
+.menu-button.is-open .icon-cross {
   display: none;
 }

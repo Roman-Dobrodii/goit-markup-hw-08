@@ -6,17 +6,26 @@
   border-bottom: 1px solid #ececec;
 }
 
-.main-nav {
+.container.main-nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   min-height: 60px;
   max-height: 80px;
+
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+  }
 }
 
 .menu-container {
+  flex-grow: 2;
+
   @media screen and (max-width: 767px) {
     position: absolute;
+    z-index: 99;
     display: none;
     top: 100%;
     left: 0;
@@ -27,6 +36,11 @@
     background-color: $title-white-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08),
       0px 4px 8px rgba(0, 0, 0, 0.04);
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   &.is-open {
     display: block;
