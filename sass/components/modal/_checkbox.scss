@@ -14,11 +14,11 @@
   overflow: hidden;
 }
 .checkbox-icon {
-  display: inline-block;
+  display: block;
   margin-right: 8px;
-  width: 16px;
-  height: 15px;
-  border: 2px solid $primary-text-color;
+  min-width: 15px;
+  min-height: 15px;
+  border: 0.75px solid $primary-text-color;
   border-radius: 2px;
 }
 .checkbox:checked + .checkbox-icon {
@@ -30,8 +30,8 @@
 }
 .check-text {
   color: $title-text-color;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
 
   & a {
     color: $accent;
