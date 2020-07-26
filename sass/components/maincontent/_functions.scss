@@ -1,18 +1,53 @@
 .functions {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.functions-list {
-  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
+  @media screen and (min-width: 768px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.functions-list {
+  display: block;
+
+  & .item:not(:last-child) {
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.functions-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
   & .item {
-    display: block;
-    width: calc((100% - 90px) / 4);
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 90px) / 4);
+    }
+  }
+  & .item:nth-child(2n + 1) {
+    @media screen and (min-width: 768px) {
+      margin-right: 30px;
+    }
   }
   & .item:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+    }
+  }
+  & .item:nth-child(n + 3) {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0px;
+    }
   }
 }
+
 .icon-frame {
   display: inline-flex;
   width: 100%;
@@ -20,8 +55,8 @@
   align-items: center;
   border-radius: 4px;
   background-color: $secondary-bg-color;
-  margin-bottom: 30px;
 }
+
 .functions-icon {
   margin: auto;
   width: 70px;
@@ -29,14 +64,22 @@
 }
 
 .functions-title {
-  margin-bottom: 10px;
+  margin-top: 30px;
   color: $primary-text-color;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
+
 .functions-text {
+  margin-top: 10px;
+  margin-bottom: 0px;
   color: $title-text-color;
   font-size: 14px;
   line-height: 1.71;
