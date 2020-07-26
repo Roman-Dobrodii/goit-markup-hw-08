@@ -3,6 +3,7 @@
   align-items: center;
   margin-bottom: 30px;
 }
+
 .checkbox {
   position: absolute;
   width: 1px;
@@ -13,6 +14,7 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .checkbox-icon {
   display: block;
   margin-right: 8px;
@@ -21,6 +23,7 @@
   border: 0.75px solid $primary-text-color;
   border-radius: 2px;
 }
+
 .checkbox:checked + .checkbox-icon {
   border-color: $accent;
   background-color: $accent;
@@ -28,6 +31,7 @@
   background-size: contain;
   background-origin: border-box;
 }
+
 .check-text {
   color: $title-text-color;
   font-size: 12px;
