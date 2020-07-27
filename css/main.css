@@ -1698,11 +1698,43 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  margin-bottom: 50px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+  .filter {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .filter {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .filter-item {
+    margin-bottom: 15px;
+  }
 }
 
 .filter-item:not(:last-child) {
@@ -1746,8 +1778,15 @@ footer {
 }
 
 .projects {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .projects {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .projects-item {
