@@ -68,20 +68,21 @@
 
 .projects-info {
   border: 1px solid #eeeeee;
+  border-top: none;
   text-align: left;
   padding: 20px 24px;
 }
 
 .projects-title {
-  // white-space: nowrap;
-  // overflow: hidden;
-  // text-overflow: ellipsis;
   margin-bottom: 4px;
   color: $primary-text-color;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  // white-space: nowrap;
+  // overflow: hidden;
+  // text-overflow: ellipsis;
 }
 
 .projects-text {

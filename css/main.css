@@ -1479,6 +1479,7 @@ footer {
   color: #757575;
   font-size: 12px;
   line-height: 1.16;
+  letter-spacing: normal;
 }
 
 .check-text a {
@@ -1874,6 +1875,7 @@ footer {
 
 .projects-info {
   border: 1px solid #eeeeee;
+  border-top: none;
   text-align: left;
   padding: 20px 24px;
 }
